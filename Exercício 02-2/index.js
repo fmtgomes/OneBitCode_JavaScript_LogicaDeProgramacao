@@ -4,7 +4,7 @@ let attackPoints = parseInt(prompt("Digite o valor dos pontos de ataque do perso
 const defenderCharacter = prompt("Digite o nome do personagem defensor: ")
 let lifePoints = parseInt(prompt("Digite o valor dos pontos de vida do personagem defensor: "))
 let defenderPoints = parseInt(prompt("Digite o valor dos pontos de defesa do personagem defensor: "))
-let shield = atkconfirm("O defensor possui escudo?")
+let shield = confirm("O defensor possui escudo?")
 
 if (attackPoints > defenderPoints) {
   let damage = attackPoints - defenderPoints
