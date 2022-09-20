@@ -12,8 +12,11 @@ if (attackPoints > defenderPoints) {
     damage = damage / 2
   }
   lifePoints = lifePoints - damage
-  alert(`O personagem ${attackerCharacter} causou um dano de ${damage} no personagem ${defenderCharacter}, sobrando ${lifePoints} pontos de vida do defensor.`)
-
+  if (lifePoints <= 0) {
+    alert(`O personagem ${defenderCharacter} acabou morrendo, pois o dano recebido zerou seus pontos de vida`)
+  } else {
+    alert(`O personagem ${attackerCharacter} causou um dano de ${damage} no personagem ${defenderCharacter}, sobrando ${lifePoints} pontos de vida do defensor.`)
+  }
 } else {
   alert(`O personagem ${attackerCharacter} não causou dano no personagem ${defenderCharacter}, sobrando ${lifePoints} pontos de vida do defensor.`)
 }
