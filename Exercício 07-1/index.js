@@ -41,10 +41,3 @@ do {
       break;
   }
 } while (chooseOption !== 3);
-
-
-// let list = ""
-// for (let numberPatient = 0; numberPatient < patient.length; numberPatient++) {
-//   list += patient[numberPatient] + "\n";
-  
-// }
